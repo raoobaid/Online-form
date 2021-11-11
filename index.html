@@ -1,0 +1,188 @@
+<html>
+<h1>
+    <center>
+        <u>
+            Unternehmensgründer nice to know
+        </u>
+    </center>
+</h1>
+    <form action="" style="padding-left:30px;">
+
+        <p>1. Hast du schon immer viele Ideen für ein Produkt/Dienstleistung gehabt?</p>
+      <input class="radio" type="radio" name="inputs" value="A" id="A1" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs" value="B" id="B1" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs" value="C" id="C1" /> Trifft nicht zu
+    
+    
+      <p>2. Bist du stressresistent?</p>
+      <input class="radio" type="radio" name="inputs1" value="A" id="A2" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs1" value="B" id="B2" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs1" value="C" id="C2" /> Trifft nicht zu
+    
+    
+      <p>3. Liegt es dir eine Gruppe zu führen?</p>
+      <input class="radio" type="radio" name="inputs2" value="A" id="A3" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs2" value="B" id="B3" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs2" value="C" id="C3" /> Trifft nicht zu
+    
+      <p>4. Kannst du eigenverantwortlich Arbeiten erledigen?</p>
+      <input class="radio" type="radio" name="inputs3" value="A" id="A4" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs3" value="B" id="B4" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs3" value="C" id="C4" /> Trifft nicht zu
+    
+      <p>5. Bist du eine zielstrebige Person?</p>
+      <input class="radio" type="radio" name="inputs4" value="A" id="A5" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs4" value="B" id="B5" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs4" value="C" id="C5" /> Trifft nicht zu
+    
+      <p>6. Hast du dir in der Vergangenheit häufig Ziele gesetzt?</p>
+      <input class="radio" type="radio" name="inputs5" value="A" id="A6" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs5" value="B" id="B6" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs5" value="C" id="C6" /> Trifft nicht zu
+    
+      <p>7. Bist du bereit Risiken einzugehen?</p>
+      <input class="radio" type="radio" name="inputs6" value="A" id="A7" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs6" value="B" id="B7" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs6" value="C" id="C7" /> Trifft nicht zu
+    
+      <p>8. Du bist überzeugt von dir und deinen Fähigkeiten?</p>
+      <input class="radio" type="radio" name="inputs7" value="A" id="A8" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs7" value="B" id="B8" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs7" value="C" id="C8" /> Trifft nicht zu
+    
+      <p>9. Du hast damit kein Problem mehr als andere zu arbeiten?</p>
+      <input class="radio" type="radio" name="inputs8" value="A" id="A9" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs8" value="B" id="B9" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs8" value="C" id="C9" /> Trifft nicht zu
+    
+      <p>10. Du bist eine kontaktfreudige und offene Person?</p>
+      <input class="radio" type="radio" name="inputs9" value="A" id="A10" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs9" value="B" id="B10" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs9" value="C" id="C10" /> Trifft nicht zu
+    
+      <p>11. Dir ist es wichtiger viel Geld zu verdienen als mehr Freizeit zu haben?</p>
+      <input class="radio" type="radio" name="inputs10" value="A" id="A11" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs10" value="B" id="B11" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs10" value="C" id="C11" /> Trifft nicht zu
+    
+      <p>12. Dir ist ein gewisser Lebensstil/Luxus wichtig?</p>
+      <input class="radio" type="radio" name="inputs11" value="A" id="A12" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs11" value="B" id="B12" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs11" value="C" id="C12" /> Trifft nicht zu
+    
+      <p>13. Du kannst es dir nur schwer vorstellen dein ganzes Leben die Aufgaben für jemanden anderen zu erfüllen</p>
+      <input class="radio" type="radio" name="inputs12" value="A" id="A13" /> Trifft zu<br>
+      <input class="radio" type="radio" name="inputs12" value="B" id="B13" /> Trifft teilweise zu<br>
+      <input class="radio" type="radio" name="inputs12" value="C" id="C13" /> Trifft nicht zu
+      </form>
+    <br><br>
+    <button onclick="checkForm()">Submit</button>
+    <h2 id="result">
+        <center>
+            <u></u>
+        </center>
+    </h2>
+    <p id="out"></p>
+<script>
+
+function checkForm() {	
+    var a = 0,
+    b = 0;
+
+	if ((document.getElementById("A1")).checked) {
+        a++;
+	}
+    if ((document.getElementById("A2")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A3")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A4")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A5")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A6")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A7")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A8")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A9")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A10")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A11")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A12")).checked) {
+        a++;
+    }
+    if ((document.getElementById("A13")).checked) {
+        a++;
+    }
+    if ((document.getElementById("C1")).checked) {
+        b++;
+	}
+    if ((document.getElementById("C2")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C3")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C4")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C5")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C6")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C7")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C8")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C9")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C10")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C11")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C12")).checked) {
+        b++;
+    }
+    if ((document.getElementById("C13")).checked) {
+        b++;
+    }
+
+    (document.getElementById("result")).innerHTML = "Result";
+
+    if (a>=8)
+    {
+        (document.getElementById("out")).innerHTML = "Wow. Du bist der absolute Unternehmer-Typ und bringst die Grundvoraussetzungen mit, um ein Unternehmen zu gründen. Du magst es dein eigener Chef zu sein, selbstverantwortlich für deinen Erfolg einzustehen und bist bereit die Extrameile zu gehen.Schreibe mir jetzt hier deine e-mail, um mit dem Gründer-Exposé dein erstes Unternehmen in Angriff zu nehmen. Du wirst mit dem Gründer-Exposé herausfinden, was du gründen willst, welche Strategie zu dir passt und wann du dein Unternehmen gründen solltest."; 
+    }
+    else if (b>=8)
+    {
+        (document.getElementById("out")).innerHTML = "Du hast Ansätze zum Unternehmensgründer. Jedoch musst dir bewusst sein, dass es kein Zuckerschlecken wird und anstrengend wird. Wenn dir das bewusst ist und du bereit bist etwas für deinen Erfolg zu tun, dann hast du auch die Tendenz Gründer zu werden. Wenn das der Fall ist, dann schreibe mir jetzt hier deine e-mail, um mit dem Gründer-Exposé dein erstes Unternehmen in Angriff zu nehmen. Du wirst mit dem Gründer-Exposé herausfinden, was du gründen willst, welche Strategie zu dir passt und wann du dein Unternehmen gründen solltest."; 
+    }
+    else
+    {
+        (document.getElementById("out")).innerHTML = "Du bist eher der Angestellten Typ. Du machst es ein festes Einkommen zu besitzen und fühlst dich wohler als Angestellter. Dir ist Sicherheit wichtig."; 
+    }
+
+}
+</script>
+</html>
