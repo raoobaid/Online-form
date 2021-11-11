@@ -6,7 +6,7 @@
         </u>
     </center>
 </h1>
-    <form action="" style="padding-left:30px;">
+    <form action="" style="padding-left:30px; font-weight: bold;">
 
         <p>1. Hast du schon immer viele Ideen für ein Produkt/Dienstleistung gehabt?</p>
       <input class="radio" type="radio" name="inputs" value="A" id="A1" /> Trifft zu<br>
@@ -76,13 +76,9 @@
       <input class="radio" type="radio" name="inputs12" value="C" id="C13" /> Trifft nicht zu
       </form>
     <br><br>
-    <button onclick="checkForm()">Submit</button>
-    <h2 id="result">
-        <center>
-            <u></u>
-        </center>
-    </h2>
-    <p id="out"></p>
+    <button style="margin-left: 30px; padding: 10px; border-radius: 5px; background-color: cornflowerblue;" onclick="checkForm()"><b>Submit</b></button>
+    <h2 id="result" style="text-align: center;"></h2>
+    <p id="out" style="font-weight: bold;"></p>
 <script>
 
 function checkForm() {	
